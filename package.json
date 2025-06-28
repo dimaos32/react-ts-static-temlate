@@ -1,0 +1,65 @@
+{
+  "name": "react-ts-static-template",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Starter template for static site development with Vite, SCSS (via Dart Sass), React (as templating engine), and TypeScript.",
+  "browserslist": [
+    "last 6 versions",
+    "Firefox ESR",
+    "> 0.25%",
+    "not dead",
+    "not IE 11",
+    "not op_mini all",
+    "Safari >= 15"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run lint && vite build && npm run prerender",
+    "prerender": "vite-plugin-ssr prerender",
+    "preview": "vite preview",
+    "lint:eslint": "eslint \"src/**/*.{ts,tsx,js,jsx}\"",
+    "lint:stylelint": "stylelint \"src/**/*.{css,scss,sass}\"",
+    "lint": "npm run lint:eslint && npm run lint:stylelint"
+  },
+  "keywords": [
+    "vite",
+    "react",
+    "typescript",
+    "static-site",
+    "ssr",
+    "scss"
+  ],
+  "author": "Dmitrii Osadchenko",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimaos32/react-ts-static-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dimaos32/react-ts-static-template/issues"
+  },
+  "homepage": "https://github.com/dimaos32/react-ts-static-template#README",
+  "devDependencies": {
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@typescript-eslint/eslint-plugin": "^8.35.0",
+    "@typescript-eslint/parser": "^8.35.0",
+    "@vitejs/plugin-react": "^4.6.0",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.30.0",
+    "eslint-plugin-react": "^7.37.5",
+    "postcss": "^8.5.6",
+    "postcss-load-config": "^6.0.1",
+    "postcss-preset-env": "^10.2.4",
+    "prettier": "^3.6.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "sass": "^1.89.2",
+    "stylelint": "^16.21.0",
+    "stylelint-config-standard-scss": "^15.0.1",
+    "stylelint-scss": "^6.12.1",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.0",
+    "vite-plugin-ssr": "^0.4.142"
+  }
+}
